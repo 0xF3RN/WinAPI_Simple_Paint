@@ -15,53 +15,35 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Line.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Oval.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PaintApp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Rect.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Shape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="resources\PaintApp.rc">
+    <ResourceCompile Include="..\..\..\win32_paint_app-master\PaintApp\src\PaintApp.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\Colors.h">
+    <ClInclude Include="..\..\..\win32_paint_app-master\PaintApp\src\Rect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\Line.h">
+    <ClInclude Include="..\..\..\win32_paint_app-master\PaintApp\src\resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\Oval.h">
+    <ClInclude Include="..\..\..\win32_paint_app-master\PaintApp\src\Shape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\PaintApp.h">
+    <ClInclude Include="..\..\..\win32_paint_app-master\PaintApp\src\Colors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\Rect.h">
+    <ClInclude Include="..\..\..\win32_paint_app-master\PaintApp\src\Line.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\resource.h">
+    <ClInclude Include="..\..\..\win32_paint_app-master\PaintApp\src\Oval.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\Shape.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="resources\resource.h">
+    <ClInclude Include="..\..\..\win32_paint_app-master\PaintApp\src\PaintApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

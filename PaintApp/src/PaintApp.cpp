@@ -231,7 +231,7 @@ int PaintApp::menuHandler(int menuItem)
 	switch (menuItem)
 	{
 	case ID_FILE_EXIT:
-		if (MessageBox(0, L"Are you sure you want to quit?", L"Quit Message", MB_YESNO) == IDYES)
+		if (MessageBox(0, L"Вы уверены, что хотите выйти?", L"Выход", MB_YESNO) == IDYES)
 		{
 			DestroyWindow(mhMainWnd);
 		}
@@ -240,6 +240,18 @@ int PaintApp::menuHandler(int menuItem)
 		menuIDChecker(mShapeID, menuItem);
 		mShapeType = LINE;
 		return 0;
+	case ID_DELETED:
+	{
+		RECT clientRect;
+		GetClientRect(mhMainWnd, &clientRect);
+		HDC hdc = GetDC(mhMainWnd);
+		HBRUSH hbr = CreateSolidBrush(GetSysColor(COLOR_WINDOW));
+		FillRect(hdc, &clientRect, hbr);
+		DeleteObject(hbr);
+		ReleaseDC(mhMainWnd, hdc);
+		return 0;
+
+	}
 	case ID_SHAPES_RECTANGL:
 		menuIDChecker(mShapeID, menuItem);
 		mShapeType = BOX;
@@ -367,7 +379,7 @@ int PaintApp::menuHandler(int menuItem)
 		mBrushPattern = HS_VERTICAL;
 		return 0;
 	case ID_INFO_INFO:
-		MessageBox(0, L"@eugenestfu mstuca 2023", L"Info", MB_OK);
+		MessageBox(0, L"> Данное приложение создано для вывода простых геометрических фигур.\n>Чтобы выбрать фигуру в меню перейдите во вкладку 'Фигура'.\n> Tакже вы можете выбрать толщину, формат и цвет во вкладке 'Стиль'.\n> Во вкладке 'Заполнение' вы можете выбрать цвет, стиль и паттерн заливки фигуры.\n> Чтобы отчистить холст нужно перейти во вкладку 'Отчистить холст', а затем отчистить его.\n\n---\n@eugenestfu mstuca 2023", L"Info", MB_OK);
 		return 0;
 	}
 	return 0;

@@ -1,2 +1,0 @@
-C:\Users\Ezk1\Desktop\win32_paint_app-master\PaintApp\x64\Debug\PaintApp.exe
-C:\Users\Ezk1\Desktop\курсач\osTermwork-main\PaintApp\x64\Debug\PaintApp.exe

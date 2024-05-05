@@ -1,4 +1,4 @@
-# osTermwork
-win32 project
-ну курсач
+# Не читай меня
+winapi курсач
+а вот мой ШЕДЕВР
 ![image](image.png)
